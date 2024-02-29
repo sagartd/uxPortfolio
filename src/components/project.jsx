@@ -1,7 +1,7 @@
-import React from "react";
+import "./project.css";
 
 const Project = () => {
-  return <div>Project</div>;
+  return <div className="project-container">Project</div>;
 };
 
 export default Project;
