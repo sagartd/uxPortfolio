@@ -1,6 +1,5 @@
 import "./header.css";
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 
 const navLinks = [
@@ -26,8 +25,7 @@ const navLinks = [
 
 const Header = () => {
   const [width, setWidth] = useState(() => window.innerWidth || 0);
-  //window width if available, or with 0 if it's running on the server.
-  
+
   useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
@@ -40,6 +38,8 @@ const Header = () => {
     };
   }, []);
 
+  const memoizedNavLinks = useMemo(() => navLinks, []);
+
   return (
     <div className="header-container">
       <header>
@@ -51,7 +51,7 @@ const Header = () => {
         <div className="nav-main">
           <nav>
             <ul>
-              {navLinks.map((link) => (
+              {memoizedNavLinks.map((link) => (
                 <li key={link.id}>
                   {width < 785 ? (
                     <NavLink to={link.path}>
