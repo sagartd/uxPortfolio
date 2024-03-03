@@ -19,7 +19,7 @@ body {
 }
 
 #root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   border-radius: 10px;
   height: 100%;
   width: 100%;
@@ -27,5 +27,3 @@ body {
   box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.45);
   padding: 20px;
 }
-
-
