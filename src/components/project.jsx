@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import "./project.css";
 import Loader from "./loader";
 
-const Project = ({ getProject }) => {
+const Project = ({ getProject, setSlidestate }) => {
   const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
+    setSlidestate(0);
     setProjectData(myPortfolioData);
   }, []);
 

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.journeyMap-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.journeyMap-info-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 30%;
+  padding: 5px 5px;
+  border-bottom: 1px solid #ffffff38;
+}
+
+.journeyMap-info-heading img {
+  width: 20px;
+  height: 20px;
+}
+
+.journeyMap-info-heading h3 {
+  text-transform: capitalize;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.table-container,
+.journeyMap-info p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.journeyMap-info h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.journeyMap-info-statement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  padding: 5px 5px;
+  border-bottom: 1px solid #ffffff38;
+  overflow-y: auto;
+}
+
+.journeyMap-info-persona {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 5px;
+  gap: 7px;
+  overflow-y: auto;
+}
+
+.journeyMap-info {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 100%;
+  border: 1px solid #ffffff38;
+  border-radius: 10px;
+}
+
+.journeyMap-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76%;
+  height: 100%;
+  border: 1px solid #ffffff38;
+  border-radius: 10px;
+}
+
+.table-container {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.table-container table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th {
+  font-size: 16px;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ffffff38;
+  text-align: left;
+  padding-left: 7px;
+  border-radius: 10px;
+}
+
+
+@media screen and (min-width: 1500px) and (min-height: 1000px) {
+  .journeyMap-info-persona p,
+  .journeyMap-info-statement p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-height: 600px) and (min-height: 425px) {
+  .journeyMap-info-heading h3 {
+    font-size: 21px;
+  }
+  .journeyMap-info-statement p {
+    height: 100%;
+  }
+  .journeyMap-info-persona h5 {
+    height: 25%;
+  }
+  .journeyMap-info-persona p {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 425px) {
+  .journeyMap-table {
+    display: none;
+  }
+  .journeyMap-info {
+    width: 100%;
+  }
+  .journeyMap-info p {
+    text-align: center;
+  }
+  .journeyMap-info-persona h5 {
+    text-align: center;
+  }
+}

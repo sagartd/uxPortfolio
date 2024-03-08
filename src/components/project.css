@@ -172,3 +172,9 @@
     height: auto;
   }
 }
+
+@media (min-width: 1120px) and (min-height: 1120px) {
+  .projectCard-container {
+    flex-direction: row;
+  }
+}

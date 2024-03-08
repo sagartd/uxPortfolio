@@ -1,3 +1,5 @@
+// import accessibility from "./assets/accessibility.svg";
+
 import React, { useState } from "react";
 import "./App.css";
 import About from "./components/about";
@@ -10,9 +12,14 @@ import CaseStudyHome from "./components/case studies/caseStudyHome";
 
 function App() {
   const [projectState, setProjectState] = useState({});
+  const [slideState, setSlidestate] = useState(0);
 
   const getProject = (id, project) => {
     setProjectState({ id, project });
+  };
+
+  const slideNavState = (id) => {
+    setSlidestate(id);
   };
 
   return (
@@ -20,10 +27,22 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/project" element={<Project getProject={getProject} />} />
+        <Route
+          path="/project"
+          element={
+            <Project getProject={getProject} setSlidestate={setSlidestate} />
+          }
+        />
         <Route
           path={`/project/${projectState.id}`}
-          element={<CaseStudyHome projectState={projectState} />}
+          element={
+            <CaseStudyHome
+              projectState={projectState}
+              slideState={slideState}
+              setSlidestate={setSlidestate}
+              slideNavState={slideNavState}
+            />
+          }
         />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
