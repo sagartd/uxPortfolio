@@ -7,6 +7,9 @@ import Welcome from "./slides/welcome";
 import PointsCard from "./slides/pointsCard";
 import Persona from "./slides/persona";
 import JourneyMap from "./slides/journeyMap";
+import PaperWireframe from "./slides/paperWireframe";
+import DigiWireframe from "./slides/digiWireframe";
+import Prototype from "./slides/prototype";
 
 const CaseStudyHome = ({
   projectState,
@@ -37,6 +40,14 @@ const CaseStudyHome = ({
         return <Persona projectPersona={slide} />;
       case 8:
         return <JourneyMap projectJourneyMap={slide} />;
+      case 10:
+        return <PaperWireframe projectPaperWireframe={slide} />;
+      case 11:
+      case 12:
+        return <DigiWireframe projectDigiWireframe={slide} />;
+      case 13:
+      case 19:
+        return <Prototype projectPrototype={slide} />;
       default:
         return null;
     }
