@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mockup-flow-container h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.mockup-flow-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.mockup-flow-imgWrapper {
+  /* grid-auto-rows: 1fr; */
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  overflow-y: auto;
+}
+
+.mockup-flow-imgWrapper img {
+  max-width: 22%;
+  max-height: 90%;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+  transition: 500ms;
+}
+
+.mockup-flow-imgWrapper img:hover {
+  transform: scale(1.02);
+  filter: none;
+  transition: 500ms;
+}
+
+@media (min-width: 1400px) {
+  .mockup-flow-imgWrapper {
+    justify-content: space-around;
+  }
+
+  .mockup-flow-imgWrapper img:hover {
+    transform: scale(1.12);
+  }
+}
+@media (min-width: 1000px) {
+  .mockup-flow-imgWrapper img {
+    max-width: 17%;
+  }
+}
+
+@media (max-width: 715px) {
+  .mockup-flow-imgWrapper img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 535px) {
+  .mockup-flow-imgWrapper img {
+    max-width: 60%;
+  }
+}

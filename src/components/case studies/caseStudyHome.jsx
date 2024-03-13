@@ -10,6 +10,10 @@ import JourneyMap from "./slides/journeyMap";
 import PaperWireframe from "./slides/paperWireframe";
 import DigiWireframe from "./slides/digiWireframe";
 import Prototype from "./slides/prototype";
+import StudyFindings from "./slides/studyFindings";
+import Mockup from "./slides/mockup";
+import Mockup2 from "./slides/mockup2";
+import MockupFlow from "./slides/mockupFlow";
 
 const CaseStudyHome = ({
   projectState,
@@ -31,6 +35,7 @@ const CaseStudyHome = ({
         return <DuplexCard projectCards={slide} />;
       case 4:
       case 9:
+      case 15:
         return <NavSlide projectSlide={slide} slideNavState={slideNavState} />;
       case 5:
         return <ResearchSummery projectResearch={slide} />;
@@ -48,6 +53,14 @@ const CaseStudyHome = ({
       case 13:
       case 19:
         return <Prototype projectPrototype={slide} />;
+      case 14:
+        return <StudyFindings projectFinding={slide} />;
+      case 16:
+        return <Mockup projectMockup={slide} />;
+      case 17:
+        return <Mockup2 projectMockup={slide} />;
+      case 18:
+        return <MockupFlow projectMockup={slide} />;
       default:
         return null;
     }

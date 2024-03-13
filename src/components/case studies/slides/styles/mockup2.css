@@ -1,0 +1,30 @@
+.mockup-photo-after {
+  display: flex;
+  width: 60%;
+  height: 85%;
+  max-width: 550px;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #ffffff38;
+}
+.mockup-photo-after p{
+  height: 25px;
+}
+.mockup-photo-afterImage {
+  display: flex;
+  height: 85%;
+  gap: 35px;
+  justify-content: center;
+}
+
+.mockup-photo-afterImage img {
+  max-width: 40%;
+  max-height: 415px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 1205px) {
+  .mockup-photo-after {
+    display: none;
+  }
+}

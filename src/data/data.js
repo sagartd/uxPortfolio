@@ -561,7 +561,7 @@ const myPortfolioData = [
           info: "Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow I connected ordering a food, so the prototype could be used in a usability study. ",
           pPhoto:
             "https://firebasestorage.googleapis.com/v0/b/svgs-18952.appspot.com/o/qmlofi-prototype.png?alt=media&token=01b2ed0d-eef7-4696-b572-9de81ee05d36",
-          linkCap: "View the Quick Meals : Low-fidelity prototype",
+          linkCap: "Quick Meals : Low-fidelity prototype",
           protoLink: [
             {
               id: 1,
@@ -707,7 +707,7 @@ const myPortfolioData = [
           info: "The final high-fidelity prototype presented cleaner user flows for selecting food items and checkout. It also meet user needs for a schedule delivery option. ",
           pPhoto:
             "https://firebasestorage.googleapis.com/v0/b/svgs-18952.appspot.com/o/hifiprototype.png?alt=media&token=141bcb01-3057-4c87-b8c9-5839d947dc87",
-          linkCap: "View the Quick Meals : High-fidelity prototype",
+          linkCap: "Quick Meals : High-fidelity prototype",
           protoLink: [
             {
               id: 1,
@@ -1145,7 +1145,7 @@ const myPortfolioData = [
           info: "Using the completed set of digital wireframes, I created a low-fidelity prototype. In the primary user flow, I connected to calculate the currency exchange rate, so the prototype could be used in a usability study. ",
           pPhoto:
             "https://firebasestorage.googleapis.com/v0/b/svgs-18952.appspot.com/o/lofi%20digi%20prototype.png?alt=media&token=ce6fd935-c112-48f3-8917-8ad83e23238b",
-          linkCap: "View the Currency Exchange : Low-fidelity prototype",
+          linkCap: "Currency Exchange : Low-fidelity prototype",
           protoLink: [
             {
               id: 1,
@@ -1267,7 +1267,7 @@ const myPortfolioData = [
           info: "The final high-fidelity prototype presented cleaner user flows from selecting currency to get exchange rate. User also able to locate currency exchange agents.",
           pPhoto:
             "https://firebasestorage.googleapis.com/v0/b/svgs-18952.appspot.com/o/cerHifiPrototype.png?alt=media&token=02aa2f14-0e75-43a4-a95b-771cf0455447",
-          linkCap: "View the Currency Exchange : High-fidelity prototype",
+          linkCap: "Currency Exchange : High-fidelity prototype",
           protoLink: [
             {
               id: 1,
