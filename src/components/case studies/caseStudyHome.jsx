@@ -14,6 +14,7 @@ import StudyFindings from "./slides/studyFindings";
 import Mockup from "./slides/mockup";
 import Mockup2 from "./slides/mockup2";
 import MockupFlow from "./slides/mockupFlow";
+import LetsConnect from "./slides/letsConnect";
 
 const CaseStudyHome = ({
   projectState,
@@ -32,14 +33,18 @@ const CaseStudyHome = ({
         return <ProjectIntro projectIntro={slide} />;
       case 2:
       case 3:
+      case 22:
         return <DuplexCard projectCards={slide} />;
       case 4:
       case 9:
       case 15:
+      case 21:
         return <NavSlide projectSlide={slide} slideNavState={slideNavState} />;
       case 5:
         return <ResearchSummery projectResearch={slide} />;
       case 6:
+      case 20:
+      case 23:
         return <PointsCard projectPoints={slide} />;
       case 7:
         return <Persona projectPersona={slide} />;
@@ -61,6 +66,8 @@ const CaseStudyHome = ({
         return <Mockup2 projectMockup={slide} />;
       case 18:
         return <MockupFlow projectMockup={slide} />;
+      case 24:
+        return <LetsConnect projectConnect={slide} />;
       default:
         return null;
     }

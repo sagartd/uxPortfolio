@@ -7,9 +7,11 @@
   align-items: center;
   border-left: 1px solid #ffffff38;
 }
+
 .mockup-photo-after p{
   height: 25px;
 }
+
 .mockup-photo-afterImage {
   display: flex;
   height: 85%;
