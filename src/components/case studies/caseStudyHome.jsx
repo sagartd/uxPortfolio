@@ -114,7 +114,7 @@ const CaseStudyHome = ({
                 }
                 disabled={slideState === data.length - 1}
                 style={{ height: "25px" }}
-                className={`${slideState === data.length - 1 ? "off" : ""}`}
+                className={`${slideState === data.length - 1 ? "turnoff" : ""}`}
               >
                 <img className="chevronright" src={angleButton} alt="right" />
               </button>
